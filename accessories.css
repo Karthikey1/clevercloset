@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fff700, #ff00ff);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.add .icon {
+    color: yellow;
+}
+
+.remove .icon {
+    color: red;
+}
+
+.edit .icon {
+    color: lightskyblue;
+}
+
+.hanger {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12l-8-8v5H3v6h10v5l8-8z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
