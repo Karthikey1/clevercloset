@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fff700, #ff00ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wardrobe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wardrobe-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.wardrobe-item:hover {
+    transform: scale(1.05);
+}
+
+.hanger {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12l-8-8v5H3v6h10v5l8-8z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
